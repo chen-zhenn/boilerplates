@@ -32,7 +32,7 @@ Na raiz do diretório **front-end/**. Siga as etapas abaixo:
 
 __1.__ Habilite arquivos de configuração para Jest e TypeScript.   
 
-Para Linux execute os comandos no terminal.    
+Para Linux execute os comandos abaixo no terminal.    
 
 ```
 cp jest.config.ts.sample jest.config.ts // cria uma cópia do arquivo .ts
