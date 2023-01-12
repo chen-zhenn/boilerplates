@@ -17,8 +17,7 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
     * :open_file_folder: back-end/
         * ...
     * :open_file_folder: front-end/
-        * dist/
-        * src/
+        * ...
 * :file_folder: docs
 
 ## :electric_plug: Instalação
