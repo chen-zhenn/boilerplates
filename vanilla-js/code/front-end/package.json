@@ -9,6 +9,7 @@
   "scripts": {
     "lint": "eslint",
     "test": "jest",
+    "test:watch": "yarn test --watchAll",
     "ts": "tsc"
   },
   "devDependencies": {
