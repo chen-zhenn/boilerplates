@@ -16,8 +16,7 @@ Boilerplate para projetos Vanilla JS (JavaScript puro)...
     * back-end/
         * ...
     * front-end/
-        * my-project/
-            * dist/
-            * src/
+        * dist/
+        * src/
 * docs/
 
