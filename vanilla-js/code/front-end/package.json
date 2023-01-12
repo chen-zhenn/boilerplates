@@ -15,6 +15,7 @@
     "ts:watch": "yarn ts --watch",
     "html:watch": "yarn pug -w src/*.pug -o dist",
     "css:watch": "sass --watch src/style/sass/main.sass dist/style/css/main.css --style compressed",
+    "server": "lite-server --baseDir=\"dist\"",
     "dev": "",
     "dev:node": "nodemon dist/js/index.js"
   },
