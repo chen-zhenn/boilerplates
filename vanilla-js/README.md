@@ -54,7 +54,7 @@ O setup está configurado para rodar cada recurso de forma isolada no terminal, 
 
 __Lint__:
 
-Roda o linter (avaliação estática) para todos os arquivos JavaScript.
+Roda o linter (avaliação estática) para todos os arquivos JavaScript.   
 As regras de validação são baseadas no style guide Idiomatic.js. Caso não tenha familiaridade, veja a documentação do [idiomatic.js](https://github.com/rwaldron/idiomatic.js)
 
 > __Obs__: Instale a extensão Eslint no seu editor para que possa tirar melhor proveito da avaliação estática de código em desenvolvimento.
