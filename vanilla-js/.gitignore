@@ -52,3 +52,4 @@ dist/
 jest.config.js
 jest.config.cjs
 jest.config.ts
+tsconfig.json
