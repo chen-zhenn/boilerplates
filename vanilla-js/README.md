@@ -1,4 +1,4 @@
-# :books: Vanilla JS Boilerplate
+# :icecream: Vanilla JS Boilerplate
 
 Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessidade de configuração complexas de bundlers como: Webpack, Parcel, Browserif, Rollup e outros...
 
