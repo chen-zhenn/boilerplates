@@ -8,5 +8,5 @@ Boilerplates para projetos...
 
 Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessidade de configuração complexas de bundlers como: Webpack, Parcel, Browserif, Rollup e outros...
 
-__De uma olhada__: :point_right: [/vanilla](code/front-end/banner-slider/)
+__De uma olhada__: :point_right: [[ aqui ]](code/front-end/banner-slider/)
 
