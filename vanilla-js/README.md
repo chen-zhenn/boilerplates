@@ -24,8 +24,7 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 ### Back-end
 
-...
-
+:construction: ...
 ### Front-end
 
 Na raiz do diretório **front-end/**. Siga as etapas abaixo:    
@@ -94,5 +93,9 @@ __Node__:
 
 Enquanto desenvolvimento você pode usar o Node pra ler seu arquivos JavaScript sem a necessidade de está com servidor ligado.
 
-__comando__: `dev:node`
+__comando__: `dev:node`   
 
+
+## :fire: Build
+
+:construction: ...
