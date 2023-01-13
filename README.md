@@ -1,6 +1,6 @@
 # :books: Boilerplates
 
-Boilerplates para projetos Vanilla JS (JavaScript puro) e outros...
+Boilerplates para projetos...
 
 ## Tipos:
 
