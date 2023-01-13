@@ -96,6 +96,6 @@ Enquanto desenvolvimento você pode usar o Node pra ler seu arquivos JavaScript 
 __comando__: `dev:node`   
 
 
-## :fire: Build
+## :package: Build
 
 :construction: ...
