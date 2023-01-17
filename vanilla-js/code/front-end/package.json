@@ -22,7 +22,7 @@
     "css": "sass --source-map src/style/sass/main.sass dist/css/main.css --style compressed",
     "css:watch": "sass --source-map --watch src/style/sass/main.sass dist/css/main.css --style compressed",
     "css:prod": "sass --no-source-map src/style/sass/main.sass dist/css/main.css --style compressed",
-    "watchers": "yarn css:watch & ts:watch & html:watch",
+    "watchers": "yarn css:watch & yarn ts:watch & yarn html:watch",
     "transpile:all": "yarn css && yarn ts && yarn html",
     "build": "rm -rf dist && yarn css:prod && yarn ts:prod && yarn html",
     "server": "lite-server --baseDir=\"dist\"",
