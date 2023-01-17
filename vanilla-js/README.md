@@ -4,6 +4,7 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 ## :factory: Recursos
 
+* Docker
 * Eslint
 * Jest
 * TypeScript
@@ -22,12 +23,45 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 ## :electric_plug: Instalação
 
+Todo o processo de instalação pode ser realizado via **Docker** ou manualmente. No entanto caso prefira instalar via **Docker**, será necessário ter o mesmo instalado em sua maquina.
+
+Como instalar o Docker, consulte a [documentação](https://docs.docker.com/get-docker/)
+
 ### Back-end
 
 :construction: ...
 ### Front-end
 
-Na raiz do diretório **front-end/**. Siga as etapas abaixo:    
+> **Obs**: Certifique-se de estar na raiz do diretório **front-end/**. Para processos abaixo. 
+
+#### Docker
+
+__1.__ Crie um container.
+
+No terminal execute o seguinte comando:
+
+```
+docker run --name frontend-boilerplate --network host -v $(pwd):/front-end boilerplate-frontend:v1.0
+```
+
+> __Obs__: O comando acima instala todas as dependências do Front-end e levanta um web server, servindo o diretório **dist/**. No entanto lembre-se que o mesmo está rodando sobre o container.
+
+__2.__ Habilite os watchers para os assets.
+
+No terminal executar o seguinte comando:
+
+`yarn watchers`
+
+> __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
+
+Agora, basta abrir seu browser(navegador) em: [http://localhost:3000](http://localhost:3000).
+
+### :boom: Boom!
+### :stuck_out_tongue_winking_eye: That's all folks!
+
+---
+
+#### Manual
 
 __1.__ Habilite arquivos de configuração para Jest e TypeScript.   
 
