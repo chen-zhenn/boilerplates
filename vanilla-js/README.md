@@ -36,7 +36,13 @@ Como instalar o Docker, consulte a [documentação](https://docs.docker.com/get-
 
 #### Docker
 
-__1.__ Habilite os watchers para os assets.
+__1.__ Instale as dependências.
+
+No terminal executar o seguinte comando:   
+
+`yarn install`
+
+__2.__ Habilite os watchers para os assets.
 
 No terminal executar o seguinte comando:
 
@@ -44,7 +50,7 @@ No terminal executar o seguinte comando:
 
 > __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
 
-__2.__ Crie um container.
+__1.__ Crie um container.
 
 No terminal execute o seguinte comando:
 
