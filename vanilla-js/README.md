@@ -23,9 +23,17 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 ## :electric_plug: Instalação
 
-Todo o processo de instalação pode ser realizado via **Docker** ou manualmente. No entanto caso prefira instalar via **Docker**, será necessário ter o mesmo instalado em sua maquina.
+É possível levantar um **Docker** container com todo ambiente configurado, porém para o desenvolvimento no host ser refletido no volume do **Docker** container, é necessário a instalação prévia das dependências.      
+Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `css`e `JavaScript`, precisam ser "transpiladas"(convertidas). Por tanto na prática o **Docker** é somente um recurso adicional para testar o ambiente.
 
-Como instalar o Docker, consulte a [documentação](https://docs.docker.com/get-docker/)
+> __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host). 
+
+Como instalar **Node.js**:   
+
+1. Via **NVM** - Node Version Manager, consulte o [repositório](https://github.com/nvm-sh/nvm)
+2. Via instalador (executavel), consulte a [documentação](https://nodejs.org/en/download)
+ 
+Como instalar o **Docker**, consulte a [documentação](https://docs.docker.com/get-docker)
 
 ### Back-end
 
@@ -42,7 +50,18 @@ No terminal executar o seguinte comando:
 
 `yarn install`
 
-__2.__ Habilite os watchers para os assets.
+__2.__ Habilite arquivos de configuração para Jest e TypeScript.   
+
+Para Linux execute os comandos abaixo no terminal.    
+
+```
+cp jest.config.ts.sample jest.config.ts // cria uma cópia do arquivo .ts
+cp tsconfig.json.sample tsconfig.json // cria uma cópia do arquivo .js
+```
+
+> __Obs__: Caso contrário realize a cópia de forma manual. 
+
+__3.__ Habilite os watchers para os assets.
 
 No terminal executar o seguinte comando:
 
@@ -50,7 +69,7 @@ No terminal executar o seguinte comando:
 
 > __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
 
-__3.__ Crie um container.
+__4.__ Crie um container.
 
 No terminal execute o seguinte comando:
 
@@ -65,27 +84,6 @@ Agora, basta abrir seu browser(navegador) em: [http://localhost:3000](http://loc
 
 ### :boom: Boom!
 ### :stuck_out_tongue_winking_eye: That's all folks!
-
----
-
-#### Manual
-
-__1.__ Habilite arquivos de configuração para Jest e TypeScript.   
-
-Para Linux execute os comandos abaixo no terminal.    
-
-```
-cp jest.config.ts.sample jest.config.ts // cria uma cópia do arquivo .ts
-cp tsconfig.json.sample tsconfig.json // cria uma cópia do arquivo .js
-```
-
-> __Obs__: Caso contrário realize a cópia de forma manual.   
-
-__2.__ Instale as dependências.
-
-No terminal executar o seguinte comando:   
-
-`yarn install`
 
 ## :video_game: Como usar
 
