@@ -29,12 +29,6 @@ Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `c
 
 > __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host).
 
-<div align="center">
-    <img src="assets/preview-install.gif" title="preview of install" alt="preview of install">
-</div>
-
----
-
 Como instalar **Node.js**:   
 
 __1.__ Via **NVM** - Node Version Manager, consulte o [repositório](https://github.com/nvm-sh/nvm)   
@@ -46,6 +40,12 @@ Como instalar o **Docker**, consulte a [documentação](https://docs.docker.com/
 
 :construction: ...
 ### Front-end
+
+<div align="center">
+    <img src="assets/preview-install.gif" title="preview of install" alt="preview of install">
+</div>
+
+---
 
 > **Obs**: Certifique-se de estar na raiz do diretório **front-end/**. Para processos abaixo. 
 
