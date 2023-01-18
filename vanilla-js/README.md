@@ -24,7 +24,7 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 ## :electric_plug: Instalação
 
 É possível levantar um **Docker** container com todo ambiente configurado, porém para o desenvolvimento no host ser refletido no volume do **Docker** container, é necessário a instalação prévia das dependências.   
-      
+
 Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `css`e `JavaScript`, precisam ser "transpiladas"(convertidas). Por tanto na prática o **Docker** é somente um recurso adicional para testar o ambiente.
 
 > __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host). 
@@ -42,8 +42,6 @@ Como instalar o **Docker**, consulte a [documentação](https://docs.docker.com/
 ### Front-end
 
 > **Obs**: Certifique-se de estar na raiz do diretório **front-end/**. Para processos abaixo. 
-
-#### Docker
 
 __1.__ Instale as dependências.
 
@@ -84,7 +82,6 @@ docker run --name frontend-boilerplate --network host -v $(pwd):/front-end boile
 Agora, basta abrir seu browser(navegador) em: [http://localhost:3000](http://localhost:3000).
 
 ### :boom: Boom!
-### :stuck_out_tongue_winking_eye: That's all folks!
 
 ## :video_game: Como usar
 
@@ -139,3 +136,5 @@ __comando__: `dev:node`
 ## :package: Build
 
 :construction: ...
+
+### :stuck_out_tongue_winking_eye: That's all folks!
