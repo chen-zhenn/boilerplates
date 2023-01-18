@@ -50,7 +50,7 @@ No terminal executar o seguinte comando:
 
 > __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
 
-__1.__ Crie um container.
+__3.__ Crie um container.
 
 No terminal execute o seguinte comando:
 
