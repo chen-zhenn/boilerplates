@@ -33,6 +33,8 @@ Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `c
     <img src="assets/preview-install.gif" title="preview of install" alt="preview of install">
 </div>
 
+---
+
 Como instalar **Node.js**:   
 
 __1.__ Via **NVM** - Node Version Manager, consulte o [repositório](https://github.com/nvm-sh/nvm)   
