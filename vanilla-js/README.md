@@ -66,7 +66,7 @@ No terminal executar o seguinte comando:
 
 `yarn watchers`
 
-> __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
+> __Obs__: O comando acima faz com que todas as mudanças nos assets do host sejam "transpiladas"(convertidas) e automaticamente refletidas no container.
 
 __4.__ Crie um container.
 
