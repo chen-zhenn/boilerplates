@@ -27,7 +27,11 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `css`e `JavaScript`, precisam ser "transpiladas"(convertidas). Por tanto na prática o **Docker** é somente um recurso adicional para testar o ambiente.
 
-> __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host). 
+> __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host).
+
+<div align="center">
+    <img src="assets/preview-install.gif" title="preview of install" alt="preview of install">
+</div>
 
 Como instalar **Node.js**:   
 
