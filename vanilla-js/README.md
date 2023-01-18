@@ -32,7 +32,7 @@ Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `c
 Como instalar **Node.js**:   
 
 __1.__ Via **NVM** - Node Version Manager, consulte o [repositório](https://github.com/nvm-sh/nvm)   
-__2.__ Via instalador (executavel), consulte a [documentação](https://nodejs.org/en/download)
+__2.__ Via instalador (executável), consulte a [documentação](https://nodejs.org/en/download)
  
 Como instalar o **Docker**, consulte a [documentação](https://docs.docker.com/get-docker)
 
