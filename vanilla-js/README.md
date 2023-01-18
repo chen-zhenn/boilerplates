@@ -36,7 +36,15 @@ Como instalar o Docker, consulte a [documentação](https://docs.docker.com/get-
 
 #### Docker
 
-__1.__ Crie um container.
+__1.__ Habilite os watchers para os assets.
+
+No terminal executar o seguinte comando:
+
+`yarn watchers`
+
+> __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
+
+__2.__ Crie um container.
 
 No terminal execute o seguinte comando:
 
@@ -46,13 +54,6 @@ docker run --name frontend-boilerplate --network host -v $(pwd):/front-end boile
 
 > __Obs__: O comando acima instala todas as dependências do Front-end e levanta um web server, servindo o diretório **dist/**. No entanto lembre-se que o mesmo está rodando sobre o container.
 
-__2.__ Habilite os watchers para os assets.
-
-No terminal executar o seguinte comando:
-
-`yarn watchers`
-
-> __Obs__: O comando acima faz com que todas as mudanças no host sejam refletidas no container.
 
 Agora, basta abrir seu browser(navegador) em: [http://localhost:3000](http://localhost:3000).
 
