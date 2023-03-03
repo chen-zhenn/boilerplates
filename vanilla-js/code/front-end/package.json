@@ -26,7 +26,7 @@
     "transpile:all": "yarn css && yarn ts && yarn html",
     "build": "rm -rf dist && yarn css:prod && yarn ts:prod && yarn html",
     "server": "lite-server --baseDir=\"dist\"",
-    "dev": "yarn transpile:all && watchers ; yarn server",
+    "dev": "yarn transpile:all && yarn watchers & yarn server",
     "dev:node": "nodemon dist/js/index.js",
     "start": "yarn build ; yarn server"
   },
