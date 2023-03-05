@@ -1,11 +1,3 @@
-export interface IgenerateIds {
-  get: () => number;
-}
-
-export interface Iutils {
-  generateIds: () => IgenerateIds;
-}
-
 export interface Iuser {
   id: number;
   name: string;
