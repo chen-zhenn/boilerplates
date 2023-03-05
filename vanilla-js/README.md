@@ -23,12 +23,9 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 ## :electric_plug: Instalação
 
-É possível levantar um **Docker** container com todo ambiente configurado, porém para o desenvolvimento no host ser refletido no volume do **Docker** container, é necessário a instalação prévia das dependências.   
+É possível levantar um container **Docker** com todo ambiente configurado, porém para o desenvolvimento no host ser refletido no volume no **Docker** é necessário configurações iniciais.   
 
-Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `css`e `JavaScript`, precisam ser "transpiladas"(convertidas). Por tanto na prática o **Docker** é somente um recurso adicional para testar o ambiente.
-
-> __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host).
-
+> __Nota__: O container **Docker**  é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local (host).
 
 Como instalar **Node.js**:   
 
@@ -42,61 +39,56 @@ Como instalar o **Docker**, consulte a [documentação](https://docs.docker.com/
 :construction: ...
 ### Front-end
 
+### Configurações iniciais
+
+> **Nota**: 
+Certifique-se de estar na raiz do diretório **:open_file_folder: front-end/**. 
+
 <div align="center">
     <img src="assets/preview-install.gif" title="preview of install" alt="preview of install">
 </div>
 
 ---
 
-> **Obs**: Certifique-se de estar na raiz do diretório **front-end/**. Para processos abaixo. 
-
-__1.__ Instale as dependências.
-
-No terminal executar o seguinte comando:   
-
-`yarn install`
-
-__2.__ Habilite arquivos de configuração para Jest e TypeScript.   
-
-Para Linux execute os comandos abaixo no terminal.    
+__1. Instale as dependências__
 
 ```
-cp jest.config.ts.sample jest.config.ts // cria uma cópia do arquivo .ts
-cp tsconfig.json.sample tsconfig.json // cria uma cópia do arquivo .js
+yarn install
 ```
 
-> __Obs__: Caso contrário realize a cópia de forma manual. 
+__2. Habilite arquivos de configuração para JavaScript__   
 
-__3.__ Habilite os watchers para os assets.
+```
+cp jest.config.ts.sample jest.config.ts
+cp tsconfig.json.sample tsconfig.json
+```
 
-No terminal executar o seguinte comando:
+> __Nota__:
+Caso seu Shell não entenda o comando `cp`, faça a cópia manualmente. 
 
-`yarn watchers`
+__3. Habilite os watchers para os assets__
 
-> __Obs__: O comando acima faz com que todas as mudanças nos assets do host sejam "transpiladas"(convertidas) e automaticamente refletidas no container.
+```
+yarn watchers
+```
 
-__4.__ Crie a imagem Docker
-
-No terminal executar o seguinte comando:
-
-`docker build -t frontend-boilerplate:v1.0 . `
-
-__5.__ Crie o container Docker.
-
-No terminal execute o seguinte comando:
+__4. Crie a imagem Docker__
 
 
-`docker run --name frontend-boilerplate --network host --volume $(pwd):/front-end frontend-boilerplate:v1.0`
+```
+docker build -t frontend-boilerplate:v1.0 .
+```
 
->__Nota__: 
-Entenda que o comando `pwd` não é interpretado como em outras Shells como Powershell, Bash, Zsh e etc. Por isso, talvez seja necessário informa o caminho ou usar um alias apropriado da Shell em uso, para indicar diretório corrente.  
+__5. Crie o container Docker__
 
- > __Obs__: O comando acima instala todas as dependências do Front-end e levanta um web server, servindo o diretório **dist/**. No entanto lembre-se que o mesmo está rodando sobre o container.
+```
+docker run --name frontend-boilerplate --network host --volume $(pwd):/front-end frontend-boilerplate:v1.0
+```
 
- > Caso tenha alguma dúvida em relação a ambientes Docker consulte a [documentação](https://docs.docker.com/get-started).
+> __Nota__: 
+Caso seu Shell não entenda o comando `pwd`, informe o caminho manualmente, ou use um alias apropriado para indicar diretório corrente.
 
-
-Agora, basta abrir seu browser(navegador) em: [http://localhost:3000](http://localhost:3000).
+__6. Acesse seu browser(navegador) em__: [http://localhost:3000](http://localhost:3000).
 
 ### :boom: Boom!
 
