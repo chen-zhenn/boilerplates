@@ -22,6 +22,7 @@
         "combine-const-and-let": "off",
         "one-var": "off",
         "no-unused-vars": "error",
+        "prefer-const": "off",
         "@typescript-eslint/no-unused-vars": "error",
         "indent": [
             "error",
