@@ -94,6 +94,27 @@ __6. Acesse seu browser(navegador) em__: [http://localhost:3000](http://localhos
 
 ## :video_game: Como usar
 
+### Workflow
+
+Uma vez realizada as configurações iniciais, o workflow de desenvolvimento segue:
+
+__1. Ligue o watcher__
+
+```yarn watchers```
+
+__2. Gerencie o container__
+
+```docker start frontend-boilerplate```
+```docker stop frontend-boilerplate```
+
+__3. Acesse Web server__
+
+Em: [http://localhost:3000](http://localhost:3000).
+
+> __Nota__: Servindo em **:open_file_folder: dist/**
+
+###  Setup
+
 O setup está configurado para rodar cada recurso de forma isolada no terminal, caso desejar. Ou se preferir ...
 
 __Lint__:
