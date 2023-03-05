@@ -18,6 +18,12 @@ export interface ItodoCategory {
   name: string;
 }
 
+export interface ItodoCategoryList {
+  id: number;
+  categories: ItodoCategory[];
+  add( _obj:ItodoCategory ):void;
+}
+
 export interface ItodoTask {
   id: number;
   category: number;

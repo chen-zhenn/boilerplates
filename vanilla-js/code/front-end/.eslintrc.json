@@ -21,9 +21,9 @@
     "rules": {
         "combine-const-and-let": "off",
         "one-var": "off",
-        "no-unused-vars": "error",
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "prefer-const": "off",
-        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "indent": [
             "error",
             4
