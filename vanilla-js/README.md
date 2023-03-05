@@ -25,7 +25,7 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 É possível levantar um container **Docker** com todo ambiente configurado, porém para o desenvolvimento no host ser refletido no volume no **Docker** é necessário configurações iniciais.   
 
-> __Nota__: O container **Docker**  é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local (host).
+> __Nota__: O container **Docker**  é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que faça o mesmo para o ambiente local (host).
 
 Como instalar **Node.js**:   
 
