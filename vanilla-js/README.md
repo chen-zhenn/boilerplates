@@ -29,6 +29,7 @@ Isso porque as mudanças nos principais assets do fonte(source) como: `html`, `c
 
 > __Nota__: O **Docker** container é configurado para subir o ambiente a partir do **Node.js** na versão `v18.12.1`. Sendo assim é recomendado que que faça o mesmo para o ambiente local(host).
 
+
 Como instalar **Node.js**:   
 
 __1.__ Via **NVM** - Node Version Manager, consulte o [repositório](https://github.com/nvm-sh/nvm)   
@@ -74,15 +75,25 @@ No terminal executar o seguinte comando:
 
 > __Obs__: O comando acima faz com que todas as mudanças nos assets do host sejam "transpiladas"(convertidas) e automaticamente refletidas no container.
 
-__4.__ Crie um container.
+__4.__ Crie a imagem Docker
+
+No terminal executar o seguinte comando:
+
+`docker build -t frontend-boilerplate:v1.0 . `
+
+__5.__ Crie o container Docker.
 
 No terminal execute o seguinte comando:
 
-```
-docker run --name frontend-boilerplate --network host -v $(pwd):/front-end boilerplate-frontend:v1.0
-```
 
-> __Obs__: O comando acima instala todas as dependências do Front-end e levanta um web server, servindo o diretório **dist/**. No entanto lembre-se que o mesmo está rodando sobre o container.
+`docker run --name frontend-boilerplate --network host --volume $(pwd):/front-end frontend-boilerplate:v1.0`
+
+>__Nota__: 
+Entenda que o comando `pwd` não é interpretado como em outras Shells como Powershell, Bash, Zsh e etc. Por isso, talvez seja necessário informa o caminho ou usar um alias apropriado da Shell em uso, para indicar diretório corrente.  
+
+ > __Obs__: O comando acima instala todas as dependências do Front-end e levanta um web server, servindo o diretório **dist/**. No entanto lembre-se que o mesmo está rodando sobre o container.
+
+ > Caso tenha alguma dúvida em relação a ambientes Docker consulte a [documentação](https://docs.docker.com/get-started).
 
 
 Agora, basta abrir seu browser(navegador) em: [http://localhost:3000](http://localhost:3000).
