@@ -104,7 +104,7 @@ __1. Ligue o watcher__
 
 __2. Gerencie o container__
 
-```docker start frontend-boilerplate```
+```docker start frontend-boilerplate```   
 ```docker stop frontend-boilerplate```
 
 __3. Acesse Web server__
