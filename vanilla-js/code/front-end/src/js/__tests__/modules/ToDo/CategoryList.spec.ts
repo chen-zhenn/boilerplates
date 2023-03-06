@@ -1,5 +1,5 @@
-import CategoryList from "../CategoryList";
-import { ItodoCategory, ItodoCategoryList } from "../interfaces";
+import CategoryList from "../../../modules/ToDo/CategoryList";
+import { ItodoCategory, ItodoCategoryList } from "../../../interfaces";
 
 
 describe( "Lista de Categorias", () => {

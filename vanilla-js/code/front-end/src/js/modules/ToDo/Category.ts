@@ -1,4 +1,4 @@
-import { ItodoCategory } from "./interfaces";
+import { ItodoCategory } from "../../interfaces";
 
 export default class Category implements ItodoCategory {
     public id: number;

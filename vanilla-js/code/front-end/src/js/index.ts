@@ -1,6 +1,6 @@
 import utils from "./utils/index";
-import Category from "./Category";
-import CategoryList from "./CategoryList";
+import Category from "./modules/ToDo/Category";
+import CategoryList from "./modules/ToDo/CategoryList";
 
 type CatItems = ReadonlySet<string>;
 

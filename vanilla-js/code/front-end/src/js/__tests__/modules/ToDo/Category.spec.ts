@@ -1,5 +1,5 @@
-import Category from "../Category";
-import { ItodoCategory } from "../interfaces";
+import Category from "../../../modules/ToDo/Category";
+import { ItodoCategory } from "../../../interfaces";
 
 
 describe( "Categoria", () => {
