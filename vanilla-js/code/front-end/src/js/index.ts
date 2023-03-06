@@ -1,4 +1,5 @@
 import { catList, catItems } from "./modules/ToDo/index";
 
-console.log( catList );
-console.log([ ...catItems ]);
+const data = { catList, catItems: [ ...catItems ] };
+console.log( data );
+
