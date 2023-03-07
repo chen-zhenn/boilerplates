@@ -1,18 +1,17 @@
 extends ../includes/header.pug
 
 block brand-component
-    h3 [ Brand component ]
-block search-component
-    h3 [ Search component ]
+    h3 Brand
 block menu-component
-    h3 [ Menu component ]
     include ./nav.pug
     +nav([{
             link:'/',label:'Home'
         },{
-            link:'foo.html',label:'nav-foo'
+            link:'foo.html',label:'Nav-foo'
         },{
-            link:'bar.html',label:'nav-bar'
+            link:'bar.html',label:'Nav-bar'
         },{
-            link:'#fooBar',label:'nav-fooBar'
+            link:'#fooBar',label:'Nav-fooBar'
         }])
+block search-component
+    h3 Search | Login

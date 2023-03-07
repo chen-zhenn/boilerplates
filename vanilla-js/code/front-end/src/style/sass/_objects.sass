@@ -1,0 +1,91 @@
+.bl
+    &-wrap,
+    &-header,
+    &-container
+        position: relative
+
+    &-wrap
+        height: inherit
+
+    &-header
+        display: flex
+        display: grid
+        grid-template-columns: 1fr
+        justify-content: space-between
+        color: $color-surface
+        background-color: rgba(255, 255, 255, 0)
+
+        &__section
+            z-index: 99
+
+            &.-brand,
+            &.-search
+                color: $color-surface
+
+            &.-brand,
+            &.-menu,
+            &.-search
+                display: flex
+                flex-flow: column
+                justify-content: center
+
+                @media(min-width: 720px)
+                    justify-content: flex-end
+
+            &.-brand
+                background-color: rgba(255, 0, 255, 0)
+
+                @media(min-width: 720px)
+                    align-items: flex-start
+
+            &.-menu
+                flex-grow: 1
+                background-color: rgba(0, 255, 255, 0)
+                
+                @media(min-width: 720px)
+                    transform: translate3d(0,-23px,0)
+                    
+            &.-search
+                background-color: rgba(255, 255, 0, 0)
+
+                @media(min-width: 720px)
+                     align-items: flex-end
+
+        &:before
+            content: ""
+            position: absolute
+            display: block
+            top: 0
+            left: 50%
+            width: 70%
+            height: 100%
+            margin-left: -35%
+            border-radius: 50px
+            z-index: 9
+
+            @media(min-width: 720px)
+                background-color: $color-surface
+        
+        @media(min-width: 720px)
+            height: 100px
+            grid-template-columns: 15% 1fr 15%
+            transform: translate3d(0,-54px,0)
+
+    &-footer
+        position: absolute
+        bottom: 0
+        width: 100%
+        text-align: center
+        opacity: 0
+
+    &-container
+        margin-right: auto
+        margin-left: auto
+
+        &.-fixed
+            max-width: 1440px
+
+            @media(max-width: 1440px)
+                $p: .625rem * 3
+                padding-right: $p
+                padding-left: $p

@@ -10,8 +10,9 @@ html(lang="en")
         block scripts
     body
         div.bl-wrap
-            block header-main
-            div.bl-main
-                block content-main
+            div(class="bl-container -fixed")
+                block header-main
+                div.bl-main
+                    block content-main
             block footer-main
         script(type="module" src="js/index.js")
