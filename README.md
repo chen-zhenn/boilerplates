@@ -10,3 +10,7 @@ Um boilerplate para projetos Vanilla JS (JavaScript puro), dispensando a necessi
 
 __De uma olhada__: :point_right: [[ aqui ]](vanilla-js/)
 
+<div align="center">
+    <img src="vanilla-js/assets/initial-look.png" title="preview of install" alt="preview of install">
+</div>
+
