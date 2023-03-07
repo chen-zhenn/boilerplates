@@ -1,0 +1,6 @@
+mixin nav(links)
+    nav.nav-main
+        ul(class="nav-list")
+            each item , index in links
+                li(class="nav-item")
+                    a(class="nav-link" href=item.link)= item.label 

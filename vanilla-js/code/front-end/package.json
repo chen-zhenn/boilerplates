@@ -20,7 +20,7 @@
     "js:watch": "yarn js --watch",
     "js:prod": "yarn js --minify",
     "html": "yarn pug src/*.pug -o dist",
-    "html:watch": "yarn pug -w src/*.pug -o dist",
+    "html:watch": "yarn pug -w src/*.pug src/pages/*.pug -o dist",
     "css": "sass --source-map src/style/sass/main.sass dist/css/main.css --style compressed",
     "css:watch": "sass --source-map --watch src/style/sass/main.sass dist/css/main.css --style compressed",
     "css:prod": "sass --no-source-map src/style/sass/main.sass dist/css/main.css --style compressed",

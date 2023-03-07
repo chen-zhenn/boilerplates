@@ -1,14 +1,13 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title= "Vanilla JS Boilerplate"
-    link(rel="stylesheet" href="css/main.css")
-  body
-    div.bl-wrap
-      div.bl-header
-      div.bl-main
-        h1.title It's Work!
-    script(type="module" src="js/index.js")
+extends layouts/default.pug
+
+block links
+  // CSS, Fonts, Icons...
+block scripts
+  // Scripts...
+
+block header-main
+  include components/header.pug
+block content-main
+  h1.title It's Work!
+block footer-main
+  include includes/footer.pug
